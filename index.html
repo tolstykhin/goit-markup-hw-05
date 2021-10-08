@@ -39,7 +39,7 @@
         <section class="hero">
             <div class="container">
                  <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-btn">Заказать услугу</button>
+                <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantages section">
@@ -90,9 +90,21 @@
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="work-list">
-                    <li class="work-item list"><img src="./imeg/service1.jpg" alt="програмирование" width="370" height="294"></li>
-                    <li class="work-item list"><img src="./imeg/service2.jpg" alt="разработка" width="370" height="294"></li>
-                    <li class="work-item list"><img src="./imeg/service3.jpg" alt="дизайн" width="370" height="294"></li>
+                    <li class="work-item list"><img src="./imeg/service1.jpg" alt="програмирование" width="370" height="294">
+                    <div class="work-imeg-tumb">
+                        <p class="work-imeg-tilte">Десктопные приложения</p>
+                    </div>
+                </li>
+                    <li class="work-item list"><img src="./imeg/service2.jpg" alt="разработка" width="370" height="294">
+                    <div class="work-imeg-tumb">
+                        <p class="work-imeg-tilte">Мобильные приложения</p>
+                    </div>
+                </li>
+                    <li class="work-item list"><img src="./imeg/service3.jpg" alt="дизайн" width="370" height="294">
+                    <div class="work-imeg-tumb">
+                        <p class="work-imeg-tilte">Дизайнерские решения</p>
+                    </div>
+                </li>
                 </ul>
             </div>
         </section>
@@ -344,7 +356,13 @@
                 </ul>
             </div>
         </div>      
-    </footer>   
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close><svg class="close-icon"><use href="./imeg/symbol-defs.svg#icon-closex"></use></svg></button>
+        </div>
+    </div> 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
